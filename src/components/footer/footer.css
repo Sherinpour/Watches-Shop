@@ -1,5 +1,28 @@
 .footer {
-  height: 200px;
-  text-align: center;
-  background-color: rgb(186, 234, 234);
+  @apply flex
+  items-center
+  relative
+  px-0
+  py-2
+  mt-20
+  bg-[#f0f0f0]
+  text-gray-700
+  justify-between
+  text-sm;
+}
+
+.footer-col-1 {
+  @apply basis-1/4
+  ml-8;
+}
+.footer-col-2 {
+  @apply basis-1/5
+  text-center
+  py-12
+  px-0;
+}
+.footer-col-3 {
+  @apply basis-1/4
+  text-right
+  mr-8;
 }
