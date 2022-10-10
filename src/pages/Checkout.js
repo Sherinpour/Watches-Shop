@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/checkout.css";
-import CommonSection from "../components/UI/CommonSection";
+import CommonSection from "../components/UI/commonSection/CommonSection";
 import Helmet from "../components/helmet/Helmet";
 import { useSelector } from "react-redux";
 

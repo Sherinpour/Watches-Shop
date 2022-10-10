@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "../styles/cart.css";
 import Helmet from "../components/helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
+import CommonSection from "../components/UI/commonSection/CommonSection";
 
 import { cartActions } from "../redux/slices/cartSlice";
 import { Link } from "react-router-dom";

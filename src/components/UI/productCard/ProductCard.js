@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import "../../styles/product-card.css";
+import "./product-card.css";
 
 import { useDispatch } from "react-redux";
-import { cartActions } from "../../redux/slices/cartSlice";
+import { cartActions } from "../../../redux/slices/cartSlice";
 
 const ProductCard = ({ item }) => {
   const dispatch = useDispatch();

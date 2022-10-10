@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import CommonSection from "../components/UI/CommonSection";
+import CommonSection from "../components/UI/commonSection/CommonSection";
 import Helmet from "../components/helmet/Helmet";
 import "../styles/shop.css";
 
 import products from "../assets/data/products";
-import ProductsList from "../components/UI/ProductsList";
+import ProductsList from "../components/UI/productsList/ProductsList";
 
 const Shop = () => {
   const [productsData, setProductsData] = useState(products);

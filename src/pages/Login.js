@@ -4,7 +4,7 @@ import Helmet from "../components/helmet/Helmet";
 import "../styles/login.css";
 import { toast } from "react-toastify";
 
-import { db, auth, storage } from "../servises/firebase";
+import { auth } from "../servises/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 const Login = () => {

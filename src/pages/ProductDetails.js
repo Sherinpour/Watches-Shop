@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { cartActions } from "../redux/slices/cartSlice";
 import products from "../assets/data/products";
 import Helmet from "../components/helmet/Helmet";
-import CommonSection from "../components/UI/CommonSection";
+import CommonSection from "../components/UI/commonSection/CommonSection";
 
 import { toast } from "react-toastify";
 import "../styles/product-details.css";

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Helmet from "../components/helmet/Helmet";
-import ProductsList from "../components/UI/ProductsList";
+import ProductsList from "../components/UI/productsList/ProductsList";
 import heroImg from "../assets/images/hero-img.png";
 import products from "../assets/data/products";
 import "../styles/home.css";
