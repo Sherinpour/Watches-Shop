@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.badge {
+  width: 15px;
+  height: 15px;
+  content: "";
+  color: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky_header {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: burlywood;
+}
+
+.profile img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.profile {
+  position: relative;
+  z-index: 9;
+}
+
+.profile .profile-actions {
+  position: absolute;
+  top: 98%;
+  left: 0;
+  width: 150px;
+  z-index: 10;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(218, 215, 215);
+  line-height: 30px;
+  display: none;
+  cursor: pointer;
+}
+
+.show-profileActions {
+  display: block !important;
+}

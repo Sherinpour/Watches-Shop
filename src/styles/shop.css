@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 100px 20px;
+}
+
+.filtered-widget {
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
