@@ -16,6 +16,8 @@ An e-commerce site with basic shopping functions. You can list the products acco
 ## Built With
 - React.js
 - Redux-Toolkit
+- react-redux
+- react-router-dom
 - TailwindCSS
 - Firebase
 
