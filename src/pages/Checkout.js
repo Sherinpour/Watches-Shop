@@ -27,10 +27,10 @@ const Checkout = () => {
 
         <div className="billing-cart">
           <div>
-            Total Qty: <span>{totalQty} items</span>
+            Total Qty : <span>{totalQty} items</span>
           </div>
           <div>
-            Subtotal: <span>{totalAmount}</span>
+            Subtotal : <span>{totalAmount}$</span>
           </div>
 
           <button className="order-btn">Place an order</button>

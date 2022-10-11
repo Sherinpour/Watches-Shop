@@ -1,6 +1,6 @@
 .product-item {
   @apply w-80
-  h-[22rem]
+  h-[24rem]
   border
   border-[1px]
   border-[#e1e1e1];
@@ -24,10 +24,11 @@
 
 .produc-name {
   @apply text-gray-900
-  font-bold;
+  text-sm
+  font-normal;
 }
 
-.produc-category {
+.produc-brand {
   @apply text-gray-500
   font-medium;
 }

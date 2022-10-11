@@ -30,7 +30,7 @@ const ProductCard = ({ item }) => {
         <h1 className="produc-name">
           <Link to={`/shop/${item.id}`}>{item.productName}</Link>
         </h1>
-        <span className="produc-category">{item.category}</span>
+        <span className="produc-brand">{item.brand}</span>
         <div className="product-card-buttom">
           <span>${item.price}</span>
           <span onClick={addToCart}>

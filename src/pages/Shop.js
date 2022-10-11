@@ -11,9 +11,10 @@ const Shop = () => {
   const handleFilter = (e) => {
     const filterValue = e.target.value;
     const filterProducts = products.filter(
-      (item) => item.category === filterValue
+      (item) => item.brand === filterValue
     );
     setProductsData(filterProducts);
+    console.log(filterValue);
   };
 
   const handleSearch = (e) => {
@@ -32,12 +33,12 @@ const Shop = () => {
       <div className="filter-product">
         <div className="filtered-widget">
           <select onChange={handleFilter}>
-            <option>Filter By Category</option>
-            <option value="sofa">Sofa</option>
-            <option value="mobile">Mobile</option>
-            <option value="chair">Chair</option>
-            <option value="watch">Watch</option>
-            <option value="wireless">Wireless</option>
+            <option>Filter By brand</option>
+            <option value="Rolex">Rolex</option>
+            <option value="Apple">Apple</option>
+            <option value="Tissot">Tissot</option>
+            <option value="Casio">Casio</option>
+            <option value="Alpina">Alpina</option>
           </select>
         </div>
 

@@ -2,14 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
-
-import "./header.css";
-import logo from "../../assets/images/eco-logo.png";
 import userIcon from "../../assets/images/user-icon.png";
-
 import useAuth from "../../custom-hooks/useAuth";
 import { signOut } from "firebase/auth";
 import { auth } from "../../servises/firebase";
+import "./header.css";
 
 const nav_links = [
   {

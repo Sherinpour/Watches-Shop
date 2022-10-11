@@ -39,7 +39,7 @@ const Cart = () => {
 
         <div className="checkout-box">
           <div className="section-a">
-            <h6>SubTotal</h6>
+            <h6>SubTotal :</h6>
             <span>${totalAmount}</span>
           </div>
           <div className="section-b">

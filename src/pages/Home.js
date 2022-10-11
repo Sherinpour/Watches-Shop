@@ -12,11 +12,11 @@ const Home = () => {
 
   useEffect(() => {
     const filteredTrendingProducts = products.filter(
-      (item) => item.category === "chair"
+      (item) => item.brand === "Rolex"
     );
 
     const filteredWatchProducts = products.filter(
-      (item) => item.category === "watch"
+      (item) => item.brand === "Alpina"
     );
 
     setTrendingProducts(filteredTrendingProducts);
