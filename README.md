@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Watches Shop | E-commerce react app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shopping site project that includes basic processes such as adding to cart, adding to favorites, product listing and product detail page, which should be on an e-commerce site.
+
+![Capture](https://user-images.githubusercontent.com/75546661/195167464-4620551f-d7d5-46b2-b9f8-f4cffc09749d.PNG)
 
 ## Available Scripts
 
