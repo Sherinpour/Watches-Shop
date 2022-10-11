@@ -22,19 +22,21 @@ const ProductCard = ({ item }) => {
     toast.success("Product added successfully");
   };
   return (
-    <div className="product_item">
-      <div className="product_img">
-        <img src={item.imgUrl} alt="" width="200px" height="200px" />
+    <div className="product-item">
+      <div className="product-img">
+        <img src={item.imgUrl} alt="" />
       </div>
-      <h3 className="product_name">
-        <Link to={`/shop/${item.id}`}>{item.productName}</Link>
-      </h3>
-      <span>{item.category}</span>
-      <div className="product_card_buttom">
-        <span className="price">${item.price}</span>
-        <span onClick={addToCart}>
-          <i className="bi bi-plus-circle"></i>
-        </span>
+      <div className="product-detail">
+        <h1 className="produc-name">
+          <Link to={`/shop/${item.id}`}>{item.productName}</Link>
+        </h1>
+        <span className="produc-category">{item.category}</span>
+        <div className="product-card-buttom">
+          <span>${item.price}</span>
+          <span onClick={addToCart}>
+            <i class="bi bi-plus-circle-fill"></i>
+          </span>
+        </div>
       </div>
     </div>
   );

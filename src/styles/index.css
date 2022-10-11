@@ -8,8 +8,8 @@
 
 body {
   @apply min-h-full
-  font-mono
-  text-xl
+  font-sans
+  text-base
   font-semibold
   m-0
   bg-[#f9f9f9]

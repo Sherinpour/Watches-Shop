@@ -7,10 +7,10 @@ import productImg05 from "../images/single-sofa-02.jpg";
 import productImg06 from "../images/single-sofa-03.jpg";
 import productImg007 from "../images/single-sofa-04.png";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/arm-chair-01.png";
+import productImg08 from "../images/arm-chair-02.png";
+import productImg09 from "../images/arm-chair-03.png";
+import productImg10 from "../images/arm-chair-01.png";
 
 import productImg13 from "../images/phone-01.jpg";
 import productImg14 from "../images/phone-02.jpg";

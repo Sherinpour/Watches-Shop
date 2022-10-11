@@ -8,7 +8,8 @@
   bg-[#f0f0f0]
   text-gray-700
   justify-between
-  text-sm;
+  text-sm
+  font-normal;
 }
 
 .footer-col-1 {

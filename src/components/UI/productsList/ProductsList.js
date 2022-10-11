@@ -4,7 +4,7 @@ import "./products-list.css";
 
 const ProductsList = ({ data }) => {
   return (
-    <div className="products-list">
+    <div className="product-display-grid">
       {data.map((item, index) => (
         <ProductCard item={item} key={index} />
       ))}
