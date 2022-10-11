@@ -8,6 +8,8 @@ Shopping site project that includes basic processes such as adding to cart, addi
 
 ![Capture3](https://user-images.githubusercontent.com/75546661/195169026-3201cd2b-4545-4b85-a9ce-93f79d7c8a5a.PNG)
 
+![Capture4](https://user-images.githubusercontent.com/75546661/195169681-908a7a08-172a-4a54-b7af-1d03afeecc7f.PNG)
+
 ## Available Scripts
 
 In the project directory, you can run:
