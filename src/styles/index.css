@@ -15,3 +15,7 @@ body {
   bg-[#f9f9f9]
   overflow-x-hidden;
 }
+
+a {
+  @apply hover:text-gray-600;
+}

@@ -1,16 +1,78 @@
 .table {
-  width: 800px;
-  text-align: center;
+  @apply w-[90%]
+  text-left;
+}
+
+.table tbody {
+  @apply text-gray-600;
 }
 
 .cart-table {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+  @apply flex
+  items-center
+  justify-between
+  my-16
+  mx-32;
+}
+
+.cart-table h2 {
+  @apply text-2xl
+  font-semibold
+  ml-20
+  text-center;
+}
+
+.table-content {
+  @apply basis-3/4;
+}
+
+.checkout-box {
+  @apply basis-1/4
+  px-8
+  py-8
+  flex
+  flex-col
+  border-[1px];
+}
+
+.section-a {
+  @apply flex
+  justify-between
+  mb-5;
+}
+
+.section-a span {
+  @apply text-xl 
+  font-bold;
+}
+
+.section-b {
+  @apply text-gray-600
+  text-sm
+  font-normal
+  mb-1;
+}
+
+.section-c {
+  @apply flex
+  flex-col
+  items-center;
+}
+
+.section-c div {
+  @apply bg-[#101010]
+  w-full
+  mt-2
+  py-3
+  px-12
+  text-center
+  text-[#fff]
+  font-semibold
+  rounded;
 }
 
 .table tr td img {
-  width: 80px !important;
-  height: 80px !important;
-  object-fit: cover;
+  @apply w-14
+  h-16
+  object-cover;
 }

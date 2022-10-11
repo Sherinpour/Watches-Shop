@@ -13,45 +13,52 @@ const Cart = () => {
   return (
     <Helmet title="Cart">
       <CommonSection title="Shopping Cart" />
-      <section className="cart-table">
+      <div className="cart-table">
         {cartItems.length === 0 ? (
-          <h2 className="fs-4 text-center">No item added to the cart</h2>
+          <h2>No item added to the cart!</h2>
         ) : (
-          <table className="table borderd">
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Qty</th>
-                <th>Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              {cartItems.map((item, index) => (
-                <ReturnCartItem item={item} key={index} />
-              ))}
-            </tbody>
-          </table>
+          <div className="table-content">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Title</th>
+                  <th>Price</th>
+                  <th>Qty</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cartItems.map((item, index) => (
+                  <ReturnCartItem item={item} key={index} />
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
 
-        <section>
-          <div>
-            <h6 className="d-flex align-items-center justify-content-between">
-              SubTotal
-              <span className="fs-4 fw-bold">${totalAmount}</span>
-            </h6>
+        <div className="checkout-box">
+          <div className="section-a">
+            <h6>SubTotal</h6>
+            <span>${totalAmount}</span>
           </div>
-          <div>
-            <button className="btn">
-              <Link to={"/checkout"}>Checkout</Link>
-            </button>
-            <button className="btn">
-              <Link to={"/shop"}>Continue</Link>
-            </button>
+          <div className="section-b">
+            <p>taxes and shipping will calculate in checkout</p>
           </div>
-        </section>
-      </section>
+          <div className="section-c">
+            <div>
+              <button>
+                <Link to={"/checkout"}>Checkout</Link>
+              </button>
+            </div>
+            <div>
+              <button>
+                <Link to={"/shop"}>Continue</Link>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </Helmet>
   );
 };
@@ -69,10 +76,12 @@ const ReturnCartItem = ({ item }) => {
         <img src={item.imgUrl} alt="" />
       </td>
       <td>{item.productName}</td>
-      <td>{item.price}</td>
+      <td>${item.price}</td>
       <td>{item.quantity}px</td>
       <td>
-        <span onClick={deleteProduct}>delete icon</span>
+        <span onClick={deleteProduct}>
+          <i class="bi bi-trash cursor-pointer"></i>
+        </span>
       </td>
     </tr>
   );

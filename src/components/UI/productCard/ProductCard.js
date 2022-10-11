@@ -34,7 +34,7 @@ const ProductCard = ({ item }) => {
         <div className="product-card-buttom">
           <span>${item.price}</span>
           <span onClick={addToCart}>
-            <i class="bi bi-plus-circle-fill"></i>
+            <i class="bi bi-plus-circle-fill cursor-pointer"></i>
           </span>
         </div>
       </div>
