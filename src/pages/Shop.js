@@ -59,7 +59,7 @@ const Shop = () => {
 
       <div>
         {productsData.length === 0 ? (
-          <div className="text-center font-bold">
+          <div className="search-result">
             <h1>No Products are found!</h1>
           </div>
         ) : (
