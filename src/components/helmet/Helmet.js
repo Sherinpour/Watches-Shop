@@ -2,7 +2,7 @@ import React from "react";
 
 const Helmet = (props) => {
   document.title = "Watches Shop - " + props.title;
-  return <div>{props.children}</div>;
+  return <>{props.children}</>;
 };
 
 export default Helmet;
