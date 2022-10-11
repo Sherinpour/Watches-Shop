@@ -19,3 +19,20 @@ An e-commerce site with basic shopping functions. You can list the products acco
 - TailwindCSS
 - Firebase
 
+
+
+## Features
+- Firebase authentication
+- Home (List products)
+- Detail products
+- Product category
+- Cart
+- Signin / Signup
+
+
+
+## Tools under development
+- Admin CRUD operations
+- Account creation and edit
+
+
