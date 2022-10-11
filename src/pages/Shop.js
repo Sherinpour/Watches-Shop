@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-
 import CommonSection from "../components/UI/commonSection/CommonSection";
 import Helmet from "../components/helmet/Helmet";
-import "../styles/shop.css";
-
 import products from "../assets/data/products";
 import ProductsList from "../components/UI/productsList/ProductsList";
+import "../styles/shop.css";
 
 const Shop = () => {
   const [productsData, setProductsData] = useState(products);
@@ -31,7 +29,7 @@ const Shop = () => {
     <Helmet title="Shop">
       <CommonSection title="Products" />
 
-      <section className="container">
+      <div className="filter-product">
         <div className="filtered-widget">
           <select onChange={handleFilter}>
             <option>Filter By Category</option>
@@ -57,15 +55,17 @@ const Shop = () => {
             <i className="bi bi-search"></i>
           </span>
         </div>
-      </section>
+      </div>
 
-      <section>
+      <div>
         {productsData.length === 0 ? (
-          <h1>No Products are found!</h1>
+          <div className="text-center font-bold">
+            <h1>No Products are found!</h1>
+          </div>
         ) : (
           <ProductsList data={productsData} />
         )}
-      </section>
+      </div>
     </Helmet>
   );
 };
