@@ -1,12 +1,48 @@
-.container {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  margin: 100px 20px;
+.filter-product {
+  @apply flex
+  justify-between
+  my-12
+  mx-40;
 }
 
 .filtered-widget {
-  padding: 8px 20px;
-  cursor: pointer;
-  border-radius: 5px;
+  @apply cursor-pointer
+  basis-1/5;
+}
+
+.filtered-widget select {
+  @apply p-2
+  bg-[#101010]
+  text-[#fff]
+  rounded;
+}
+
+.search-bod {
+  @apply basis-2/5
+  bg-[#fff]
+  w-full
+  flex
+  items-center
+  justify-between
+  border-[1px]
+  border-gray-200
+  rounded
+  py-2;
+}
+
+.search-bod input {
+  @apply w-full
+  border-none
+  outline-none
+  py-2
+  px-3;
+}
+
+.search-bod span {
+  @apply mr-2;
+}
+
+.search-result {
+  @apply text-center 
+  font-bold;
 }

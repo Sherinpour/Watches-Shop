@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-
-import CommonSection from "../components/UI/CommonSection";
+import CommonSection from "../components/UI/commonSection/CommonSection";
 import Helmet from "../components/helmet/Helmet";
-import "../styles/shop.css";
-
 import products from "../assets/data/products";
-import ProductsList from "../components/UI/ProductsList";
+import ProductsList from "../components/UI/productsList/ProductsList";
+import "../styles/shop.css";
 
 const Shop = () => {
   const [productsData, setProductsData] = useState(products);
@@ -13,9 +11,10 @@ const Shop = () => {
   const handleFilter = (e) => {
     const filterValue = e.target.value;
     const filterProducts = products.filter(
-      (item) => item.category === filterValue
+      (item) => item.brand === filterValue
     );
     setProductsData(filterProducts);
+    console.log(filterValue);
   };
 
   const handleSearch = (e) => {
@@ -31,15 +30,15 @@ const Shop = () => {
     <Helmet title="Shop">
       <CommonSection title="Products" />
 
-      <section className="container">
+      <div className="filter-product">
         <div className="filtered-widget">
           <select onChange={handleFilter}>
-            <option>Filter By Category</option>
-            <option value="sofa">Sofa</option>
-            <option value="mobile">Mobile</option>
-            <option value="chair">Chair</option>
-            <option value="watch">Watch</option>
-            <option value="wireless">Wireless</option>
+            <option>Filter By brand</option>
+            <option value="Rolex">Rolex</option>
+            <option value="Apple">Apple</option>
+            <option value="Tissot">Tissot</option>
+            <option value="Casio">Casio</option>
+            <option value="Alpina">Alpina</option>
           </select>
         </div>
 
@@ -57,15 +56,17 @@ const Shop = () => {
             <i className="bi bi-search"></i>
           </span>
         </div>
-      </section>
+      </div>
 
-      <section>
+      <div>
         {productsData.length === 0 ? (
-          <h1>No Products are found!</h1>
+          <div className="search-result">
+            <h1>No Products are found!</h1>
+          </div>
         ) : (
           <ProductsList data={productsData} />
         )}
-      </section>
+      </div>
     </Helmet>
   );
 };

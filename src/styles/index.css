@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply box-border;
+}
+
 body {
-  @apply bg-red-500;
+  @apply min-h-full
+  font-sans
+  text-base
+  font-semibold
+  m-0
+  bg-[#f9f9f9]
+  overflow-x-hidden;
+}
+
+a {
+  @apply hover:text-gray-600;
 }

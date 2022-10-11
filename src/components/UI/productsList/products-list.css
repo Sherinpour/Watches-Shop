@@ -1,0 +1,10 @@
+.product-display-grid {
+  @apply w-full
+  h-auto
+  grid
+  grid-cols-4
+  gap-8
+  mt-2
+  px-12
+  py-2;
+}

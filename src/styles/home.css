@@ -1,4 +1,66 @@
-.hero_section {
-  align-items: center;
-  background-color: #b3cdce;
+.banner {
+  @apply w-full
+  flex
+  h-[34rem]
+  mt-8
+  mb-12
+  bg-[#f3f3f3];
+}
+
+.banner-desc {
+  @apply flex
+  items-start
+  flex-col
+  p-20
+  basis-1/2;
+}
+
+.banner-desc h1 {
+  @apply text-[2.3rem]
+  w-2/3
+  mt-8
+  mb-4
+  font-normal;
+}
+
+.button {
+  @apply bg-[#101010]
+  p-[1.2rem]
+  text-[#fff]
+  font-bold
+  relative
+  flex
+  justify-center
+  items-center
+  mt-8
+  hover:text-gray-400;
+}
+
+.banner-img {
+  @apply relative
+  w-full
+  h-full
+  basis-1/2
+  overflow-hidden;
+}
+
+.display {
+  @apply m-4
+  mt-8;
+}
+
+.display-header {
+  @apply flex
+  justify-between
+  items-center
+  px-12;
+}
+
+.display-header a {
+  @apply text-[1rem]
+  underline;
+}
+
+.display-header h1 {
+  @apply text-xl;
 }

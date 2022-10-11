@@ -1,19 +1,87 @@
-input {
-  width: 100%;
-  border: 1px solid black;
-  margin: 10px;
-  height: 30px;
+.auth-content {
+  @apply w-[40rem]
+  mt-40
+  border-[1px]
+  border-gray-200
+  h-auto
+  m-auto;
 }
 
-button {
-  border: 1px solid black;
+.auth {
+  @apply w-full
+  p-8;
 }
 
-form {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
+.auth form {
+  @apply flex
+  flex-col
+  items-start
+  w-full
+  text-sm;
+}
+.auth h3 {
+  @apply py-4
+ text-lg;
+}
+
+.input-group {
+  @apply flex
+  flex-col
+  my-1;
+}
+
+.input-group input {
+  @apply w-full
+  border-[1px]
+  outline-none
+  py-5
+  px-3;
+}
+
+.profile-file {
+  @apply border-none
+   text-sm 
+   !pb-8 
+   !pt-2;
+}
+
+.label-input {
+  @apply p-1
+  text-[#696868];
+}
+
+.button {
+  @apply !bg-[#101010]
+  p-3
+  text-[#fff]
+  font-bold
+  relative
+  flex
+  justify-center
+  items-center
+  hover:text-gray-400;
+}
+
+.auth-message {
+  @apply w-full
+  flex
+  items-center
+  justify-center
+  px-3
+  m-auto
+  bg-[#f2f2f2]
+  border-[1px]
+  text-xs
+  text-[#4a4a4a]
+  h-20;
+}
+
+.auth-message span {
+  @apply mr-12
+  relative;
+}
+
+.auth-message a {
+  @apply p-2
+  border-[1px];
 }
