@@ -11,31 +11,31 @@ const Checkout = () => {
   return (
     <Helmet title="Checkout">
       <CommonSection title="Checkout" />
-      <section>
-        <h6 className="mb-4 fw-bold">Billing Information</h6>
-        <form className="billing-form">
-          <input type="text" placeholder="Enter Your name" />
-          <input type="email" placeholder="Enter Your email" />
-          <input type="number" placeholder="Phone number" />
-          <input type="text" placeholder="Street address" />
-          <input type="text" placeholder="City" />
-          <input type="text" placeholder="Postal code" />
-          <input type="text" placeholder="Country" />
-        </form>
-
-        <div className="checkout-cart">
-          <h6>
-            Total Qty: <span>{totalQty} items</span>
-          </h6>
-          <h6>
-            Subtotal: <span>{totalAmount}</span>
-          </h6>
-          <h6>
-            shiping: <span>0</span>
-          </h6>
-          <button className="w-100">Place an order</button>
+      <div className="billing">
+        <div className="billing-form">
+          <h6>Billing Information</h6>
+          <form>
+            <input type="text" placeholder="Enter Your name" />
+            <input type="email" placeholder="Enter Your email" />
+            <input type="number" placeholder="Phone number" />
+            <input type="text" placeholder="Street address" />
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="Postal code" />
+            <input type="text" placeholder="Country" />
+          </form>
         </div>
-      </section>
+
+        <div className="billing-cart">
+          <div>
+            Total Qty: <span>{totalQty} items</span>
+          </div>
+          <div>
+            Subtotal: <span>{totalAmount}</span>
+          </div>
+
+          <button className="order-btn">Place an order</button>
+        </div>
+      </div>
     </Helmet>
   );
 };

@@ -1,13 +1,64 @@
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 50%;
+.billing {
+  @apply flex
+  justify-between
+  items-center
+  mx-40
+  my-12;
+}
+.billing-form {
+  @apply basis-3/4;
+}
+.billing-form h6 {
+  @apply text-xl
+  text-gray-700
+  font-semibold;
 }
 
-input {
-  width: 100%;
-  margin: 10px;
-  height: 30px;
+.billing-form form {
+  @apply w-full
+  pr-12
+  py-8;
+}
+
+.billing-form form input {
+  @apply w-full
+  border-[1px]
+  text-sm
+  outline-none
+  py-4
+  px-3
+  mb-2;
+}
+
+.billing-cart {
+  @apply w-full
+  basis-1/4
+  mb-[12rem]
+  ml-12
+  border
+  h-48
+  p-8
+  bg-[#101010]
+  border
+  rounded-lg;
+}
+
+.billing-cart div {
+  @apply flex
+  justify-between
+  items-center
+  mb-4
+  text-gray-100;
+}
+
+.order-btn {
+  @apply bg-[#f3f3f3]
+  text-gray-800
+  w-full
+  mt-2
+  py-3
+  px-12
+  text-center
+  font-semibold
+  rounded;
 }

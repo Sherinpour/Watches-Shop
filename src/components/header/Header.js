@@ -111,7 +111,7 @@ const Header = () => {
               onClick={toggleProfileAction}
             >
               {currentUser ? (
-                <div className="user-nav">
+                <div className="user-nav flex-row">
                   <span onClick={logout}>Logout</span>
                   <i class="bi bi-arrow-right-circle"></i>
                 </div>

@@ -30,6 +30,7 @@
   @apply basis-1/4
   px-8
   py-8
+  mb-60
   flex
   flex-col
   border-[1px];
