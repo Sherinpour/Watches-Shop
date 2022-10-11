@@ -1,5 +1,61 @@
-.product-details {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
+.details {
+  @apply flex
+  items-center
+  justify-between
+  mt-20
+  p-4
+  mx-28
+  bg-[#fff]
+  border
+  border-gray-200;
+}
+
+.product-image {
+  @apply basis-1/2
+  relative
+  bg-[#f8f8f8]
+  w-full
+  h-full
+  flex
+  justify-center
+  border;
+}
+
+.product-image img {
+  @apply w-[50%]
+  block;
+}
+
+.product-desc {
+  @apply basis-1/2
+  pl-8;
+}
+
+.product-desc div {
+  @apply py-3;
+}
+
+.product-desc div h1 {
+  @apply text-3xl
+  font-normal;
+}
+
+.product-desc div p {
+  @apply text-sm
+  text-gray-600
+  font-medium;
+}
+
+.product-desc button {
+  @apply bg-[#101010]
+  py-2
+  px-3
+  text-[#fff]
+  font-bold
+  relative
+  mt-4
+  flex
+  justify-center
+  items-center
+  hover:text-gray-400;
 }
